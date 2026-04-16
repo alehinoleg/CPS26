@@ -73,6 +73,14 @@ body {
     font-weight: 500;
 }
 
+.button__svg {
+    border-radius: 50%;
+}
+
+.button__svg:active {
+    transform: scale(0.95);
+}
+
 .button__description {
     display: none;
 }
@@ -307,6 +315,23 @@ body {
 
     .content__description {
         height: auto;
+    }
+
+    .button {
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .button__svg {
+        transition: transform 0.4s ease;
+    }
+    
+    .button:hover {
+        transform: translateY(-3px);
+    }
+    
+    .button:hover .button__svg {
+        transform: scale(1.1);
+        box-shadow: 0 8px 20px #ff3e786e;
     }
 
     .button__description {

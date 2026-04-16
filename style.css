@@ -149,9 +149,10 @@ body {
     font-size: 16px;
     white-space: nowrap;
     padding: 8px 16px;
+    border: 2px solid transparent;
 }
 
-.slide-menu__item--active {
+.slide-menu__item:hover {
     border: 2px solid #41f6d7;
     border-radius: 6px;
 }
@@ -269,14 +270,33 @@ body {
 @media (min-width: 1120px) {
     .header {
         justify-content: flex-end;
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 42px 32px;
     }
 
     .header__burger-block {
         display: none;
     }
 
+    .slide-menu {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .title {
+        margin-top: 12px;
+    }
+
+    .title::before {
+        left: -30px;
+    }
+
     .main {
-        transform: translateY(-76px);
+        transform: translateY(-124px);
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 42px 32px;
     }
 
     .content {

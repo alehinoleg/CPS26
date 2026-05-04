@@ -60,6 +60,18 @@ body {
     background-color: #fff;
 }
 
+.header--menu {
+    padding: 0;
+    margin-bottom: 45px;
+}
+
+.header__menu-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+}
+
 .button {
     background-color: #fff;
     border: none;
@@ -92,6 +104,11 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 165px;
+}
+
+.header__burger-block--menu {
+    width: 100%;
+    gap: 17px;
 }
 
 .header__logo {
@@ -203,8 +220,92 @@ body {
     display: block;
 }
 
-.header__social-block {
+.social-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-block--mobile {
     display: none;
+}
+
+.social-block--menu {
+    width: 152px;
+}
+
+.menu {
+    width: 320px;
+    height: 100vh;
+    box-shadow: 16px 0px 52px 0px #0E185033;
+    padding: 23px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu__link {
+    padding: 12px 0;
+}
+
+.menu__item {
+    padding: 16px 0;
+    font-weight: 500;
+}
+
+.menu__item--active {
+    color: #7E7E82;
+    position: relative;
+}
+
+.menu__item--active::before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    width: 4px;
+    height: 40px;
+    background-color: #41f6d7;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0 15px 15px 0; 
+}
+
+.contacts-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.mail {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1B1C21;
+}
+
+.tell {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1B1C21;
+}
+
+.lang-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 86px;
+}
+
+.lang-block__button {
+    border: none;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+}
+
+.lang-block__button--active {
+    color: #7E7E82;
 }
 
 @media (min-width: 768px) {
@@ -223,20 +324,22 @@ body {
         left: -17px;
     }
 
+    header__logo-menu {
+        margin-right: 0;
+        margin-left: 17px;
+    }
+
     .header__burger-block {
         width: 177px;
     }
 
-    .header__social-block {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .social-block--header {
         gap: 16px;
         position: relative;
         margin-right: 20px;
     }
 
-    .header__social-block::after {
+    .social-block--header::after {
         content: '';
         position: absolute;
         right: -20px;
@@ -283,6 +386,12 @@ body {
         max-width: 1120px;
         margin: 0 auto;
         padding: 42px 32px;
+    }
+
+    .header--menu {
+        padding: 0;
+        justify-content: space-between;
+        margin-bottom: 45px;
     }
 
     .header__burger-block {

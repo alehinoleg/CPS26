@@ -253,12 +253,12 @@ body {
     font-weight: 500;
 }
 
-.menu__item--active {
+.menu__item:hover {
     color: #7E7E82;
     position: relative;
 }
 
-.menu__item--active::before {
+.menu__item:hover::before {
     content: '';
     position: absolute;
     left: -24px;
@@ -269,6 +269,12 @@ body {
     transform: translateY(-50%);
     border-radius: 0 15px 15px 0; 
 }
+
+/* .menu__item--active {
+    color: #7E7E82;
+    position: relative;
+} */
+
 
 .contacts-block {
     display: flex;

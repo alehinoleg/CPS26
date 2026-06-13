@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS</title>
     <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <aside class="menu">
+    <!-- <aside class="menu">
         <div>
             <div class="header header--menu">
                 <div class="header__menu-block">
@@ -32,14 +37,14 @@
             </div>
             <nav>
             <ul>
-                <li class="menu__item menu__item--active"><a class="menu__link" href="#">Ремонт техники</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Ремонт техники</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Услуги и сервисы</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Корпоративным клиентам</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Продавцам техники</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Партнерам</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Производителям</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Наши сервисные центры</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Контакт</a></li>
             </ul>
             </nav>
         </div>
@@ -71,8 +76,8 @@
                 <button class="lang-block__button">CH</button>
             </div>
         </div>
-    </aside>
-    <!-- <header class="header">
+    </aside> -->
+    <header class="header">
         <div class="header__burger-block">
             <button class="button">
                 <svg class="button__svg" width="40px" height="40px">
@@ -132,28 +137,148 @@
             <li class="slide-menu__item"><a href="">Отзывы</a></li>
         </ul>
         <section class="content">
-            <div class="content__wrapper">
-                <div class="content__description">
-                    <p class="content__description-first">Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
-                        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                    </p>
-                    <p class="content__description-second">
-                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, 
-                        что подтверждает большое количество постоянных клиентов. 
-                        Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-                    </p>
+            <div class="content__flex">
+                <div class="content__wrapper">
+                    <div class="content__description">
+                        <p class="content__description-first">Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
+                            Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                        </p>
+                        <p class="content__description-second">
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, 
+                            что подтверждает большое количество постоянных клиентов. 
+                            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, 
+                            советуют нас родным и близким.
+                        </p>
+                    </div> 
+                    <button class="content__button content__button--expand">
+                        <svg width="24px" height="24px">
+                            <use href="icons/sprite.svg#icon-expand"></use>
+                        </svg>
+                        Читать далее
+                    </button>
+                    <button class="content__button content__button--narrow">
+                        <svg width="24px" height="24px">
+                            <use href="icons/sprite.svg#icon-narrow"></use>
+                        </svg>
+                        Скрыть
+                    </button>
                 </div>
-                <button class="content__button-expand">
+                <div class="content__picture">
+                    <img src="./img/mg3223.jpg" alt="Логотип CPS " class="card__img">
+                </div>
+            </div>
+            <section class="services">
+                <h2 class="services__h2">Ремонт техники различных брендов</h2>
+                <div class="swiper services-slider">
+                    <div class="swiper-wrapper swiper-wrapper-flex">
+                        <div class="swiper-slide service-card">
+                            <img src="icons/brands/lenovo.svg" alt="Lenovo">
+                            <a href="#">
+                                <svg width="40px" height="40px"> 
+                                    <use href="icons/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                
+                        <div class="swiper-slide service-card">
+                            <img src="icons/brands/acer.svg" alt="Acer">
+                            <a href="#">
+                                <svg width="40px" height="40px">
+                                    <use href="icons/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide service-card">    
+                            <img src="icons/brands/apple.svg" alt="Apple">
+                            <a href="#">
+                                <svg width="40px" height="40px">
+                                    <use href="icons/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide service-card">
+                            <img src="icons/brands/bosch.svg" alt="Bosch">
+                            <a href="#">
+                                <svg width="40px" height="40px">
+                                    <use href="icons/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide service-card">
+                            <img src="icons/brands/hp.svg" alt="HP">
+                            <a href="#">
+                                <svg width="40px" height="40px">
+                                    <use href="icons/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide service-card">
+                            <img src="icons/brands/samsung.svg" alt="Samsung">
+                            <a href="#">
+                                <svg width="40px" height="40px">
+                                    <use href="icons/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide service-card">
+                            <img src="icons/brands/sony.svg" alt="Sony">
+                            <a href="#">
+                                <svg width="40px" height="40px">
+                                    <use href="icons/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide service-card">
+                            <img src="icons/brands/view-sonic.svg" alt="View-Sonic">
+                            <a href="#">
+                                <svg width="40px" height="40px">
+                                    <use href="icons/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide service-card">
+                            <img src="icons/brands/hp.svg" alt="HP">
+                            <a href="#">
+                                <svg width="40px" height="40px">
+                                    <use href="icons/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide service-card">
+                            <img src="icons/brands/acer.svg" alt="Acer">
+                            <a href="#">
+                                <svg width="40px" height="40px">
+                                    <use href="icons/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="swiper-pagination"></div>
+                </div>
+                <button class="content__button content__button--swiper-expand">
                     <svg width="24px" height="24px">
                         <use href="icons/sprite.svg#icon-expand"></use>
                     </svg>
-                    Читать далее
+                    Показать все
                 </button>
-            </div>
-            <div class="content__picture">
-                <img src="./img/mg3223.jpg" alt="Логотип CPS " class="card__img">
-            </div>
+                <button class="content__button content__button--swiper-narrow">
+                    <svg width="24px" height="24px">
+                        <use href="icons/sprite.svg#icon-narrow"></use>
+                    </svg>
+                    Скрыть
+                </button>
+            </section>
         </section>
-    </main> -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </body>
 </html>
